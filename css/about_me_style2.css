@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+/* This code is for the font of the entire website */
+
+#wrapper{
+    display: grid;
+    text-align: center;
+    grid-template-areas: "bdsc innergridnav innergridnav"
+    "innerbody innerbody innerbody";
+    font-family: 'Poppins', sans-serif;
+}
+
+#innergridnav, #home, #about, #culture, #gallery, #hobbies, #innerbody{
+    border:1px solid peachpuff;
+}
+
+#bdsc{
+    grid-area: bdsc;
+    background-color: peachpuff;
+    padding-top: 10px;
+}
+
+#innergridnav{
+    grid-area: innergridnav;
+    background-color: peachpuff;
+    text-align: center;
+    font-size: 150%
+}
+
+#innerbody{
+    /* The innerbody covers the entire body section which contains the text and image */
+    grid-area: innerbody;
+    background-color: #B86F52;
+    text-align: left;
+    border-radius: 1px;
+    color: white;
+    font-size: 130%
+}
+
+#innergridnav{
+    display: grid;
+    grid-template-areas: "home about culture gallery hobbies";
+    padding: 6px;
+    grid-column-gap: 60px;
+    text-align: center;
+    color:#707070
+}   
+
+#home{
+    grid-area: home;
+    text-align: center;
+    color: #707070;
+}
+
+#about{
+    grid-area: about;
+    text-align: center
+}
+
+#culture{
+    grid-area: culture;
+    text-align: center
+}
+
+#gallery{
+    grid-area: gallery;
+    text-align: center
+}
+
+#hobbies{
+    grid-area: hobbies;
+    text-align: center
+}
+
+#innerbody{
+    display: grid;
+    grid-template-areas: "photo me strengths";
+    padding: 10px;
+    grid-column-gap: 35px;
+    font-size: 100%;
+    padding-bottom:63px
+}   
+
+#photo{
+    grid-area: photo;
+    padding: 1px;
+    text-align: center;
+    padding-top: 15%;
+    padding-left: 17%;
+    padding-bottom: 15%;
+    margin-bottom: 21%
+}
+#me{
+    grid-area: me;
+    padding-left:85px;
+    padding-right:10px;
+    text-align: left;
+    font-size: 110%
+}
+#strengths{
+    grid-area: strengths;
+    padding-right: 150px;
+    text-align: left
+}
+
+a{
+    text-decoration:none;
+    color:#707070;
+}

@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+/* This code is for the font used in every page of this website*/
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@600&display=swap');
+
+/* This is the code used for the "Luke Lin" name on the home page. It is cursive */
+
+#wrapper{
+    display: grid;
+    text-align: center;
+    grid-template-areas: "bdsc innergridnav innergridnav"
+    "body body body";
+    font-family: 'Poppins', sans-serif;
+
+    
+}
+
+#innergridnav, #home, #about, #culture, #gallery, #hobbies, #body{
+    border:1px solid peachpuff;
+}
+
+.centered {
+    /* This code is to make the "Luke Lin" text centered on the image */
+    position:absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#bdsc{
+    grid-area: bdsc;
+    background-color: peachpuff;
+    padding-top: 10px;
+}
+
+#innergridnav{
+    grid-area: innergridnav;
+    background-color: peachpuff;
+    text-align: center;
+    font-size: 150%
+}
+
+#body{
+    /* The body covers the entire area with the text and the image */
+    grid-area: body;
+    padding-top:17.5px;
+    padding-bottom:5px;
+    background-color: #B86F52;
+    text-align: center;
+    border-radius: 1px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 350%;
+    color: white;
+}
+
+#innergridnav{
+    display: grid;
+    grid-template-areas: "home about culture gallery hobbies";
+    padding: 6px;
+    grid-column-gap: 60px;
+    text-align: center;
+    color: #707070;
+}   
+
+#home{
+    grid-area: home;
+    text-align: center;
+}
+
+#about{
+    grid-area: about;
+    text-align: center
+}
+
+#culture{
+    grid-area: culture;
+    text-align: center
+}
+
+#gallery{
+    grid-area: gallery;
+    text-align: center
+}
+
+#hobbies{
+    grid-area: hobbies;
+    text-align: center
+}
+
+a{
+    /* This code is to make sure the words with links such as the "Home" is not underlined and is not in a different font/colour */
+    text-decoration:none;
+    color:#707070;
+}
